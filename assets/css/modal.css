@@ -1,0 +1,26 @@
+@import url(./modalHeader.css);
+@import url(./modalIdentificacao.css);
+@import url(./modalCardStats.css);
+@import url(./modalDesc.css);
+@import url(./modalEvo.css);
+@import url(./modalRangeInput.css);
+
+.modal__container {
+    border: none;
+    height: auto;
+    margin: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 100vh;
+    position: fixed;
+    width: auto;
+    grid-template-rows: 1fr 2fr 2fr 6fr;
+}
+
+.modal__container[open] {
+    display: grid;
+}
+
+.modal__container::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
